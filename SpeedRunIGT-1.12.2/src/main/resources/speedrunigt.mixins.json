@@ -1,0 +1,53 @@
+{
+  "required": true,
+  "package": "com.redlimerl.speedrunigt.mixins",
+  "plugin": "com.redlimerl.speedrunigt.SpeedRunIGTMixinPlugin",
+  "mixins": [
+    "EndPortalBlockMixin",
+    "LivingEntityMixin",
+    "PlayerAdvancementTrackerMixin",
+    "ServerStatHandlerMixin",
+    "ServerWorldMixin",
+    "access.PlayerManagerAccessor",
+    "access.ServerStatHandlerAccessor",
+    "coop.PlayerManagerMixin",
+    "coop.TimeCommandMixin",
+    "network.ServerPlayNetworkHandlerMixin",
+    "timeline.ServerPlayerEntityMixin"
+  ],
+  "client": [
+    "ClientAdvancementManagerMixin",
+    "ClientPlayerEntityMixin",
+    "ClientWorldMixin",
+    "InGameHudMixin",
+    "KeyBindingMixin",
+    "MinecraftClientMixin",
+    "PlayerAdvancementTrackerMixin",
+    "ServerStatHandlerMixin",
+    "access.ButtonWidgetAccessor",
+    "access.ClientChunkProviderAccessor",
+    "access.MinecraftClientAccessorForAttack",
+    "access.WorldRendererAccessor",
+    "keybinding.GameOptionsMixin",
+    "keybinding.KeyBindingAccessor",
+    "network.ClientPlayNetworkHandlerMixin",
+    "retime.OptionButtonWidgetMixin",
+    "retime.OptionScreenMixin",
+    "retime.SodiumOptionImplMixin",
+    "retime.accessor.OptionSliderWidgetAccessor",
+    "screen.CreateWorldScreenMixin",
+    "screen.CreditsScreenMixin",
+    "screen.DownloadingTerrainScreenMixin",
+    "screen.GameMenuScreenMixin",
+    "screen.OptionsScreenMixin",
+    "server.IntegratedServerMixin",
+    "timeline.SoundSystemMixin",
+    "translate.TranslationStorageMixin"
+  ],
+  "server": [
+    "server.DedicatedServerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
